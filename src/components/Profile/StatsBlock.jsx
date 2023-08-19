@@ -1,19 +1,19 @@
-import { StatsItem, StatsList } from "./StatsBlock.styled";
+import { StatsItem, StatsList, Label, Quantity } from "./StatsBlock.styled";
 
 export const StatsBlock = ({ stats: {followers, views, likes} }) => {
     return (
         <StatsList>
             <StatsItem>
-                <span className="label">Followers</span>
-                <span className="quantity">{followers}</span>
+                <Label>Followers</Label>
+                <Quantity>{followers}</Quantity>
             </StatsItem>
             <StatsItem>
-                <span className="label">Views</span>
-                <span className="quantity">{views}</span>
+                <Label>Views</Label>
+                <Quantity>{views}</Quantity>
             </StatsItem>
             <StatsItem>
-                <span className="label">Likes</span>
-                <span className="quantity">{likes}</span>
+                <Label>Likes</Label>
+                <Quantity>{likes}</Quantity>
             </StatsItem>
         </StatsList>
     );
