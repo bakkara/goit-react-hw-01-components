@@ -1,10 +1,11 @@
 import { Profile } from "./Profile/Profile"
 import user from '../user.json'
+import { Layout } from "./Layout"
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <Profile items={user} />
-    </div>
+    </Layout>
   )
 }

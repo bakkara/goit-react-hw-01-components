@@ -1,10 +1,12 @@
 import { Description } from "./Description"
+import { Wrapper } from "./Profile.styled"
+import { StatsBlock } from "./StatsBlock"
 
 export const Profile = ({ items }) => {
     return (
-        <div className="profile">
+        <Wrapper>
             <Description items={items} />
-        </div>
+            <StatsBlock stats={items.stats} />
+        </Wrapper>
     )
-
 }
