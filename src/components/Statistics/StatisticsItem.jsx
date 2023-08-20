@@ -1,10 +1,10 @@
-import { Label, Percentage } from "./StatisticItem.styled"
+import { StatItemWrapper, Label, Percentage } from "./StatisticsItem.styled"
 
 export const StatisticsItem = ({ label, value }) => {
     return (
-        <div>
+        <StatItemWrapper>
             <Label>{label}</Label>
             <Percentage>{value}%</Percentage>
-        </div>
+        </StatItemWrapper>
     )
 }

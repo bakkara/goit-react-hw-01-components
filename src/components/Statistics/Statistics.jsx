@@ -1,9 +1,9 @@
-import { StatItem, StatList, StatSection, Title } from "./Statistic.styled"
+import { StatItem, StatList, StatSection, Title } from "./Statistics.styled"
 import { StatisticsItem } from "./StatisticsItem"
 
 export const Statistics = ({ title, stats }) => {
     return <StatSection>
-        <Title>{title}</Title>
+       {title && <Title>{title}</Title>}
         
         <StatList>
             {stats.map(items => {
