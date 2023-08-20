@@ -1,4 +1,5 @@
 import { StatsItem, StatsList, Label, Quantity } from "./StatsBlock.styled";
+import PropTypes from 'prop-types';
 
 export const StatsBlock = ({ stats: {followers, views, likes} }) => {
     return (
@@ -17,4 +18,12 @@ export const StatsBlock = ({ stats: {followers, views, likes} }) => {
             </StatsItem>
         </StatsList>
     );
+}
+
+StatsBlock.propTypes = {
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
+    }).isRequired
 }

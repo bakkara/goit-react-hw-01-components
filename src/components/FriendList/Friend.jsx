@@ -1,4 +1,5 @@
-import {FriendAvatar, FriendName, FriendWrapper, Status} from "./Friend.styled";
+import { FriendAvatar, FriendName, FriendWrapper, Status } from "./Friend.styled";
+import PropTypes from 'prop-types';
 
 export function Friend({ avatar, name, isOnline }) {
   return (
@@ -9,3 +10,9 @@ export function Friend({ avatar, name, isOnline }) {
     </FriendWrapper>
   );
 }
+
+Friend.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};
