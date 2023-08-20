@@ -16,7 +16,7 @@ export const Status = styled.span`
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: ${ props => (props.color ? 'green' : 'red')}`
+    background-color: ${ props => (props.color === 'true' ? 'green' : 'red')}`
 
 export const FriendAvatar = styled.img`
     border-radius: 5px;
